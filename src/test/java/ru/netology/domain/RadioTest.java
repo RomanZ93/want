@@ -2,6 +2,7 @@ package ru.netology.domain;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -17,7 +18,7 @@ class RadioTest {
             , delimiter = ';'
     )
     void pressNextStationTest(String name, int start, int expected) {
-        Radio radio=new Radio();
+        Radio radio = new Radio();
         radio.setCurrentStation(start);
 
         radio.pressNextStation();
@@ -34,7 +35,7 @@ class RadioTest {
             , delimiter = ';'
     )
     void pressPrevStationTest(String name, int start, int expected) {
-        Radio radio=new Radio();
+        Radio radio = new Radio();
         radio.setCurrentStation(start);
 
         radio.pressPrevStation();
@@ -51,7 +52,7 @@ class RadioTest {
             , delimiter = ';'
     )
     void pressPlusVolumeTest(String name, int start, int expected) {
-        Radio radio=new Radio();
+        Radio radio = new Radio();
         radio.setCurrentVolume(start);
 
         radio.pressPlusVolume();
@@ -68,7 +69,7 @@ class RadioTest {
             , delimiter = ';'
     )
     void pressMinusVolumeTest(String name, int start, int expected) {
-        Radio radio=new Radio();
+        Radio radio = new Radio();
         radio.setCurrentVolume(start);
 
         radio.pressMinusVolume();
